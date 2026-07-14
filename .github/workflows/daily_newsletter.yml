@@ -13,6 +13,23 @@ jobs:
     permissions:
       contents: write
 
+    # These are available to every step below as normal environment variables.
+    # Make sure a secret with each of these exact names exists under
+    # Settings -> Secrets and variables -> Actions -> Repository secrets.
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GMAIL_USER: ${{ secrets.GMAIL_USER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GROQ_MODEL: ${{ secrets.GROQ_MODEL }}
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      NEWSLETTER_SENDER_NAME: ${{ secrets.NEWSLETTER_SENDER_NAME }}
+      NEWSLETTER_SENDER_EMAIL: ${{ secrets.NEWSLETTER_SENDER_EMAIL }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      NEWSLETTER_MAX_ARTICLES: ${{ secrets.NEWSLETTER_MAX_ARTICLES }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -26,16 +43,20 @@ jobs:
       - name: Install Dependencies
         run: pip install --upgrade -r requirements.txt
 
-      - name: Load Environment Variables
+      - name: Verify Required Secrets
         run: |
-          if [ -f .env ]; then
-            echo "Loading variables from .env file"
-            export $(cat .env | grep -v '^#' | grep -v '^$' | xargs)
-            # Export to GitHub ENV for subsequent steps
-            cat .env | grep -v '^#' | grep -v '^$' >> $GITHUB_ENV
-          else
-            echo "Warning: .env file not found"
+          missing=0
+          for var in GEMINI_API_KEY GMAIL_USER GMAIL_APP_PASSWORD GROQ_API_KEY SMTP_HOST SMTP_PORT SUPABASE_URL SUPABASE_SERVICE_KEY; do
+            if [ -z "${!var}" ]; then
+              echo "::error::Missing required secret: $var"
+              missing=1
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
+            echo "One or more required secrets are not set in this repo's Actions secrets."
+            exit 1
           fi
+          echo "All required secrets are present."
 
       - name: Initialize Runtime Directories
         run: |
@@ -43,34 +64,22 @@ jobs:
           mkdir -p logs/delivery_reports newsletters
 
       - name: Fetch RSS News
-        run: |
-          export $(cat .env | grep -v '^#' | grep -v '^$' | xargs)
-          python scripts/fetch_news.py
+        run: python scripts/fetch_news.py
 
       - name: Fetch Live Market Data
-        run: |
-          export $(cat .env | grep -v '^#' | grep -v '^$' | xargs)
-          python scripts/fetch_market_data.py
+        run: python scripts/fetch_market_data.py
 
       - name: Clean and Deduplicate News
-        run: |
-          export $(cat .env | grep -v '^#' | grep -v '^$' | xargs)
-          python scripts/clean_news.py
+        run: python scripts/clean_news.py
 
       - name: AI Summarization (Groq)
-        run: |
-          export $(cat .env | grep -v '^#' | grep -v '^$' | xargs)
-          python scripts/summarize_news.py
+        run: python scripts/summarize_news.py
 
       - name: Generate Newsletter
-        run: |
-          export $(cat .env | grep -v '^#' | grep -v '^$' | xargs)
-          python scripts/generate_newsletter.py
+        run: python scripts/generate_newsletter.py
 
       - name: Send Email
-        run: |
-          export $(cat .env | grep -v '^#' | grep -v '^$' | xargs)
-          python scripts/send_email.py
+        run: python scripts/send_email.py
 
       - name: Commit Archives
         if: success()

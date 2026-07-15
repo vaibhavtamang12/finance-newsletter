@@ -38,21 +38,22 @@ REPORT_DIR = PROJECT_ROOT / "logs" / "delivery_reports"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
-# SMTP & Sender Config (Hardcoded)
-SMTP_HOST = "smtp.gmail.com"
-SMTP_PORT = 587
-GMAIL_USER = "prlinsightspartners@gmail.com"
-GMAIL_APP_PASSWORD = "dcmb smtw ygea idey"
-SENDER_NAME = "Finance Digest Bot"
-SENDER_EMAIL = "prlinsightspartners@gmail.com"
+# SMTP & Sender Config (loaded from environment / .env / GitHub Secrets)
+SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
+SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
+GMAIL_USER = os.getenv("GMAIL_USER")
+GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
+SENDER_NAME = os.getenv("NEWSLETTER_SENDER_NAME", "Finance Digest Bot")
+SENDER_EMAIL = os.getenv("NEWSLETTER_SENDER_EMAIL", GMAIL_USER)
 SUBJECT_TEMPLATE = "[Daily] Finance Market Digest - {date}"
 
 # Validate critical credentials upfront
-# if not all([GMAIL_USER, GMAIL_APP_PASSWORD, SENDER_EMAIL]):
-#    raise EnvironmentError(
-#        "❌ Missing required Gmail SMTP credentials in .env. "
-#        "Ensure GMAIL_USER, GMAIL_APP_PASSWORD, and SENDER_EMAIL are set."
-#    )
+if not all([GMAIL_USER, GMAIL_APP_PASSWORD, SENDER_EMAIL]):
+    raise EnvironmentError(
+        "❌ Missing required Gmail SMTP credentials. "
+        "Ensure GMAIL_USER, GMAIL_APP_PASSWORD, and NEWSLETTER_SENDER_EMAIL "
+        "are set in your .env file (local) or GitHub Secrets (CI)."
+    )
 
 # Basic RFC 5322 email validation pattern
 EMAIL_REGEX = re.compile(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")

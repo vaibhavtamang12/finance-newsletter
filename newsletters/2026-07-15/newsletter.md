@@ -24,13 +24,6 @@
 
 
 ---
-### IBM warns AI boom squeezing software budgets; shares sink in sector rout
-* **Source:** Investing.com
-* **Published:** Jul 15, 2026 05:24 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/ibm-expects-secondquarter-revenue-below-estimates-4790496)
-
-
----
 ### DocMorris posts strong Q2 sales growth on prescription medicine demand
 * **Source:** Investing.com
 * **Published:** Jul 15, 2026 05:55 UTC
@@ -42,6 +35,13 @@
 * **Source:** Investing.com
 * **Published:** Jul 15, 2026 05:26 UTC
 * **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/seb-posts-higher-q2-profit-on-strong-investment-banking-fee-income-4792164)
+
+
+---
+### Taiwan stocks lower at close of trade; Taiwan Weighted down 1.42%
+* **Source:** Investing.com
+* **Published:** Jul 15, 2026 06:05 UTC
+* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/taiwan-stocks-lower-at-close-of-trade-taiwan-weighted-down-142-4792185)
 
 
 ---
@@ -78,12 +78,12 @@
 | CAC 40 (France) | -1.36% | +0.33% | +0.33% | +2.64% |
 | DAX 40 (Germany) | -2.73% | +0.30% | +0.30% | +2.55% |
 | STOXX Europe 600 (EUR) | -1.46% | +0.27% | +0.27% | +8.14% |
-| Nikkei 225 (Japan) | +2.19% | -2.49% | -2.49% | +36.51% |
-| Hang Seng (HK) | +2.13% | +8.08% | +8.08% | -3.51% |
+| Nikkei 225 (Japan) | +2.21% | -2.48% | -2.48% | +36.53% |
+| Hang Seng (HK) | +2.01% | +7.95% | +7.95% | -3.63% |
 | MSCI World (Developed) | -0.79% | +0.18% | +0.18% | +9.28% |
 | MSCI ACWI | -1.10% | -0.66% | -0.66% | +10.21% |
 | MSCI EM (Emerging) | -3.59% | -5.72% | -5.72% | +18.14% |
-- Nikkei 225 (Japan) outperformed global peers with a WTD return of +2.19%.
+- Nikkei 225 (Japan) outperformed global peers with a WTD return of +2.21%.
 - MSCI EM (Emerging) saw the steepest weekly decline at -3.59%.
 - Significant regional divergence this week: a 5.8pp spread between the best and worst performers.
 
@@ -122,5 +122,5 @@
 ---
 **Disclaimer:** This material is provided for informational and educational purposes only and does not constitute investment, financial, legal, accounting, or tax advice. Investing involves risk, including possible loss of principal. Past performance is not indicative of future results. Readers should consult with their registered investment advisor before making any investment decisions.
 
-*Generated on 2026-07-15 11:49 AM IST (2026-07-15 06:19:16 UTC)*
+*Generated on 2026-07-15 11:54 AM IST (2026-07-15 06:24:56 UTC)*
 *Manage preferences: Unsubscribe | View Archive*

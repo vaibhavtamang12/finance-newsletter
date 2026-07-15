@@ -38,13 +38,20 @@ REPORT_DIR = PROJECT_ROOT / "logs" / "delivery_reports"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
+def _clean_env(name: str, default: Optional[str] = None) -> Optional[str]:
+    """Read an env var and strip surrounding whitespace/newlines.
+    Secrets pasted into .env or GitHub Secrets sometimes carry a trailing
+    newline, which breaks email header generation (HeaderWriteError)."""
+    value = os.getenv(name, default)
+    return value.strip() if isinstance(value, str) else value
+
 # SMTP & Sender Config (loaded from environment / .env / GitHub Secrets)
-SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
-SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
-GMAIL_USER = os.getenv("GMAIL_USER")
-GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
-SENDER_NAME = os.getenv("NEWSLETTER_SENDER_NAME", "Finance Digest Bot")
-SENDER_EMAIL = os.getenv("NEWSLETTER_SENDER_EMAIL", GMAIL_USER)
+SMTP_HOST = _clean_env("SMTP_HOST", "smtp.gmail.com")
+SMTP_PORT = int(_clean_env("SMTP_PORT", "587"))
+GMAIL_USER = _clean_env("GMAIL_USER")
+GMAIL_APP_PASSWORD = _clean_env("GMAIL_APP_PASSWORD")
+SENDER_NAME = _clean_env("NEWSLETTER_SENDER_NAME", "Finance Digest Bot")
+SENDER_EMAIL = _clean_env("NEWSLETTER_SENDER_EMAIL", GMAIL_USER)
 SUBJECT_TEMPLATE = "[Daily] Finance Market Digest - {date}"
 
 # Validate critical credentials upfront

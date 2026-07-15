@@ -17,7 +17,7 @@ jobs:
     # Make sure a secret with each of these exact names exists under
     # Settings -> Secrets and variables -> Actions -> Repository secrets.
     env:
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GROQ_API_KEY }}
       GMAIL_USER: ${{ secrets.GMAIL_USER }}
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

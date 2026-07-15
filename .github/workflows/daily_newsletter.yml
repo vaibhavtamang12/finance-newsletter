@@ -46,7 +46,7 @@ jobs:
       - name: Verify Required Secrets
         run: |
           missing=0
-          for var in GEMINI_API_KEY GMAIL_USER GMAIL_APP_PASSWORD GROQ_API_KEY SMTP_HOST SMTP_PORT SUPABASE_URL SUPABASE_SERVICE_KEY; do
+          for var in GROQ_API_KEY GMAIL_USER GMAIL_APP_PASSWORD GROQ_API_KEY SMTP_HOST SMTP_PORT SUPABASE_URL SUPABASE_SERVICE_KEY; do
             if [ -z "${!var}" ]; then
               echo "::error::Missing required secret: $var"
               missing=1

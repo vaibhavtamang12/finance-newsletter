@@ -35,11 +35,13 @@ LOG_DIR = PROJECT_ROOT / "logs"
 SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
 MAX_CONCURRENT = int(os.getenv("SUMMARIZE_CONCURRENCY", "5"))
 
 # Load GROQ API Key from environment
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+if GROQ_API_KEY:
+    GROQ_API_KEY = GROQ_API_KEY.strip()
 if not GROQ_API_KEY:
     logger = logging.getLogger("summarize_news")
     logger.critical("❌ GROQ_API_KEY not found in .env file. Please set GROQ_API_KEY in .env")

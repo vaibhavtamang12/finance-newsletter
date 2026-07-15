@@ -10,59 +10,38 @@
 - Pure Value Factor Leadership
 ## 📰 Top Stories
 
-### ASML hikes sales forecast for second time this year on strong AI chip demand
+### ASML rises 5% after hiking sales forecast for second time this year on strong AI chip demand
 * **Source:** CNBC Markets
-* **Published:** Jul 15, 2026 05:44 UTC
+* **Published:** Jul 15, 2026 08:11 UTC
 * **Link:** [Read Full Article](https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html)
 
 
 ---
-### Factbox-Inside the cockpit: How Air India’s Boeing Dreamliner flight ended in disaster
+### FREE WEBINAR: Investing.com experts unveil the top 10 ‘buy now’ picks for H2 2026
 * **Source:** Investing.com
-* **Published:** Jul 15, 2026 05:54 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/factboxinside-the-cockpit-how-air-indias-boeing-dreamliner-flight-ended-in-disaster-4792177)
+* **Published:** Jul 15, 2026 07:49 UTC
+* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/live-investingcom-experts-unveil-the-top-10-buy-now-picks-for-h2-2026-4785663)
 
 
 ---
-### DocMorris posts strong Q2 sales growth on prescription medicine demand
+### Berenberg starts Burkhalter with Hold, says Swiss renovation boost already priced
 * **Source:** Investing.com
-* **Published:** Jul 15, 2026 05:55 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/docmorris-posts-strong-q2-sales-growth-on-prescription-medicine-demand-4792178)
+* **Published:** Jul 15, 2026 07:44 UTC
+* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/berenberg-starts-burkhalter-with-hold-says-swiss-renovation-boost-already-priced-4792317)
 
 
 ---
-### SEB posts higher Q2 profit on strong investment banking, fee income
+### European luxury stocks rally after Richemont’s stronger-than-expected results
 * **Source:** Investing.com
-* **Published:** Jul 15, 2026 05:26 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/seb-posts-higher-q2-profit-on-strong-investment-banking-fee-income-4792164)
+* **Published:** Jul 15, 2026 07:57 UTC
+* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/european-luxury-stocks-rally-after-richemonts-strongerthanexpected-results-4792346)
 
 
 ---
-### Taiwan stocks lower at close of trade; Taiwan Weighted down 1.42%
+### BofA upgrades Imperial Brands to Buy, sees FY26 growth concerns fading
 * **Source:** Investing.com
-* **Published:** Jul 15, 2026 06:05 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/taiwan-stocks-lower-at-close-of-trade-taiwan-weighted-down-142-4792185)
-
-
----
-### China AI stocks rise on report of DeepSeek seeking IPO this year
-* **Source:** Investing.com
-* **Published:** Jul 15, 2026 05:42 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/china-ai-stocks-rise-on-report-of-deepseek-seeking-ipo-this-year-4792171)
-
-
----
-### ASML raises 2026 forecast, expands capacity on AI chip demand
-* **Source:** Investing.com
-* **Published:** Jul 15, 2026 05:55 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/asml-tops-q2-estimates-on-ai-chip-demand-4792151)
-
-
----
-### Elanders reports Q2 sales beat, names Florian Beck as new CEO
-* **Source:** Investing.com
-* **Published:** Jul 15, 2026 05:46 UTC
-* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/elanders-reports-q2-sales-beat-names-florian-beck-as-new-ceo-93CH-4792173)
+* **Published:** Jul 15, 2026 08:01 UTC
+* **Link:** [Read Full Article](https://www.investing.com/news/stock-market-news/bofa-upgrades-imperial-brands-to-buy-sees-fy26-growth-concerns-fading-4792351)
 
 
 ---
@@ -74,16 +53,16 @@
 | NASDAQ 100 (US) | -1.88% | -3.34% | -3.34% | +14.93% |
 | Dow Jones (US) | -0.26% | +0.34% | +0.34% | +8.54% |
 | S&P/TSX Composite (CAD) | -0.15% | +1.14% | +1.14% | +10.63% |
-| FTSE 100 (UK) | -1.44% | +0.19% | +0.19% | +5.71% |
-| CAC 40 (France) | -1.36% | +0.33% | +0.33% | +2.64% |
-| DAX 40 (Germany) | -2.73% | +0.30% | +0.30% | +2.55% |
-| STOXX Europe 600 (EUR) | -1.46% | +0.27% | +0.27% | +8.14% |
-| Nikkei 225 (Japan) | +2.21% | -2.48% | -2.48% | +36.53% |
-| Hang Seng (HK) | +2.01% | +7.95% | +7.95% | -3.63% |
+| FTSE 100 (UK) | -0.02% | +0.17% | +0.17% | +5.68% |
+| CAC 40 (France) | -0.08% | +0.24% | +0.24% | +2.55% |
+| DAX 40 (Germany) | -0.62% | -0.32% | -0.32% | +1.91% |
+| STOXX Europe 600 (EUR) | +0.06% | +0.33% | +0.33% | +8.20% |
+| Nikkei 225 (Japan) | +2.24% | -2.45% | -2.45% | +36.58% |
+| Hang Seng (HK) | +1.93% | +7.87% | +7.87% | -3.70% |
 | MSCI World (Developed) | -0.79% | +0.18% | +0.18% | +9.28% |
 | MSCI ACWI | -1.10% | -0.66% | -0.66% | +10.21% |
 | MSCI EM (Emerging) | -3.59% | -5.72% | -5.72% | +18.14% |
-- Nikkei 225 (Japan) outperformed global peers with a WTD return of +2.21%.
+- Nikkei 225 (Japan) outperformed global peers with a WTD return of +2.24%.
 - MSCI EM (Emerging) saw the steepest weekly decline at -3.59%.
 - Significant regional divergence this week: a 5.8pp spread between the best and worst performers.
 
@@ -122,5 +101,5 @@
 ---
 **Disclaimer:** This material is provided for informational and educational purposes only and does not constitute investment, financial, legal, accounting, or tax advice. Investing involves risk, including possible loss of principal. Past performance is not indicative of future results. Readers should consult with their registered investment advisor before making any investment decisions.
 
-*Generated on 2026-07-15 11:54 AM IST (2026-07-15 06:24:56 UTC)*
+*Generated on 2026-07-15 02:13 PM IST (2026-07-15 08:43:17 UTC)*
 *Manage preferences: Unsubscribe | View Archive*

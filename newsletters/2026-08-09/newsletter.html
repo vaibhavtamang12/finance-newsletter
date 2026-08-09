@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Daily Market Brief — Sunday, August 09, 2026</title>
+  <style type="text/css">/* ─── EMAIL CLIENT OPTIMIZATION ───
+   (moved here from an inline <style> block in newsletter.html so that
+   ALL styling now lives in this single file) */
+table { border-spacing: 0; border-collapse: collapse; }
+img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: nearest-neighbor; }
+
+/* Prevent Outlook from messing with responsive layouts */
+@media only screen and (max-width: 600px) {
+  body { width: 100% !important; }
+  table { width: 100% !important; }
+  .container { width: 100% !important; }
+}
+
+/* ─── RESET & BASE ─── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #e8ecf0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #1a1a2e;
+  line-height: 1.7;
+}
+
+/* ─── WRAPPER ─── */
+.wrapper { width: 100%; padding: 28px 12px; background: #e8ecf0; }
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  overflow: hidden;
+}
+
+/* ─── HERO BANNER ─── */
+.hero {
+  background: linear-gradient(160deg, #0a1628 0%, #0d2244 45%, #1a3a5c 80%, #1e4976 100%);
+  color: #fff;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 55%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cpolyline points='0,180 60,140 120,160 180,90 240,110 300,50 360,70 400,30 400,200 0,200' fill='rgba(255,255,255,0.04)'/%3E%3Cpolyline points='0,180 60,155 120,170 180,115 240,130 300,75 360,90 400,55' fill='none' stroke='rgba(41,182,246,0.25)' stroke-width='1.5'/%3E%3Ccircle cx='300' cy='50' r='3' fill='rgba(41,182,246,0.5)'/%3E%3Ccircle cx='180' cy='90' r='3' fill='rgba(41,182,246,0.5)'/%3E%3C/svg%3E") no-repeat center bottom / cover;
+}
+.hero-inner { padding: 36px 40px 32px; position: relative; z-index: 1; }
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.hero-logo {
+  display: flex; align-items: center;
+}
+.hero-brand-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.3;
+}
+.hero-brand-tagline {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+}
+.hero-tag {
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #29b6f6;
+  border: 1px solid rgba(41,182,246,0.4);
+  padding: 4px 12px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.hero-title {
+  font-family: 'Georgia', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  margin-bottom: 14px;
+}
+.hero-meta {
+  font-family: 'Arial', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+.hero-meta span { color: rgba(255,255,255,0.85); }
+
+/* ─── LOGO TOP RIGHT ─── */
+.logo-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 120px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* ─── SIGNAL STRIP ─── */
+.signal-strip {
+  display: flex;
+  background: #0d1f3c;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.signal-item {
+  flex: 1;
+  padding: 12px 16px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+.signal-item:last-child { border-right: none; }
+.signal-label {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  display: block;
+  margin-bottom: 3px;
+}
+.signal-value {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+.signal-value.pos { color: #4caf82; }
+.signal-value.neg { color: #ef5350; }
+.signal-value.neutral { color: #ffa726; }
+
+/* ─── SECTION WRAPPER ─── */
+.section { padding: 32px 40px; border-bottom: 1px solid #edf0f4; }
+.section:last-of-type { border-bottom: none; }
+
+/* ─── SECTION EYE-BROW ─── */
+.eyebrow {
+  font-family: 'Arial', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #8a9ab5;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.eyebrow::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #edf0f4;
+}
+.section-title {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+/* ─── EXECUTIVE SUMMARY ─── */
+.exec-box {
+  background: #f5f8fd;
+  border-left: 4px solid #1a3a5c;
+  border-radius: 0 4px 4px 0;
+  padding: 18px 22px;
+  font-size: 14.5px;
+  color: #2d3a4f;
+  line-height: 1.75;
+}
+.exec-box p { margin-bottom: 12px; }
+.exec-box p:last-child { margin-bottom: 0; }
+.exec-box strong { color: #0d1f3c; }
+.key-drivers {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed #c8d3e4;
+}
+.key-drivers .kd-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #8a9ab5;
+  margin-bottom: 8px;
+}
+.driver-pill {
+  display: inline-block;
+  background: #e8f0fe;
+  color: #1a3a5c;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin: 3px 3px 0 0;
+}
+
+/* ─── BULLET LISTS ─── */
+.brief-list { list-style: none; }
+.brief-list li {
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid #f0f3f8;
+  font-size: 14px;
+  color: #3d4f6a;
+  position: relative;
+}
+.brief-list li:last-child { border-bottom: none; }
+.brief-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #1a3a5c;
+  font-size: 11px;
+  top: 12px;
+}
+.brief-list li strong { color: #0d1f3c; }
+
+/* ─── PERFORMANCE TABLE ─── */
+.perf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.perf-table thead tr {
+  background: #0d1f3c;
+  color: #fff;
+}
+.perf-table thead th {
+  padding: 11px 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.perf-table thead th:not(:first-child) { text-align: right; }
+.perf-table tbody tr:nth-child(even) { background: #f7f9fc; }
+.perf-table tbody tr:hover { background: #edf3fb; }
+.perf-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #edf0f4;
+  color: #3d4f6a;
+}
+.perf-table td:first-child { font-weight: 600; color: #1a2a40; }
+.perf-table td:not(:first-child) {
+  text-align: right;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: 700;
+}
+.pos { color: #2e7d52; }
+.neg { color: #c62828; }
+.flat { color: #7a8a9e; }
+
+/* ─── MAGNITUDE-BASED GRADIENT BACKGROUNDS ─── */
+/* Positive values - Green gradients */
+.pos-small { 
+  color: #2e7d52; 
+  background: linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08));
+}
+.pos-medium { 
+  color: #1b5e20; 
+  background: linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2));
+  font-weight: 700;
+}
+.pos-large { 
+  color: #fff; 
+  background: linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65));
+  font-weight: 700;
+}
+
+/* Negative values - Red gradients */
+.neg-small { 
+  color: #c62828; 
+  background: linear-gradient(to right, rgba(198, 40, 40, 0.15), rgba(198, 40, 40, 0.08));
+}
+.neg-medium { 
+  color: #b71c1c; 
+  background: linear-gradient(to right, rgba(198, 40, 40, 0.35), rgba(198, 40, 40, 0.2));
+  font-weight: 700;
+}
+.neg-large { 
+  color: #fff; 
+  background: linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65));
+  font-weight: 700;
+}
+
+/* Flat/Zero values */
+.flat-small {
+  color: #7a8a9e;
+  background: linear-gradient(to right, rgba(122, 138, 158, 0.1), rgba(122, 138, 158, 0.05));
+}
+
+/* ─── INSIGHT CALLOUTS ─── */
+.insight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 4px;
+}
+.insight-card {
+  background: #f5f8fd;
+  border-top: 3px solid #1a3a5c;
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+.insight-card.green { border-top-color: #2e7d52; }
+.insight-card.red { border-top-color: #c62828; }
+.insight-card.amber { border-top-color: #e65100; }
+.ic-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #8a9ab5;
+  margin-bottom: 6px;
+}
+.ic-value {
+  font-family: 'Georgia', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.3;
+}
+.ic-sub {
+  font-size: 12px;
+  color: #5a6e88;
+  margin-top: 4px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ─── KEY INSIGHTS BULLETS ─── */
+.insight-bullets { margin-top: 6px; }
+.ib-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #edf0f4;
+  font-size: 14px;
+  color: #3d4f6a;
+}
+.ib-item:last-child { border-bottom: none; }
+.ib-item .ib-title {
+  font-weight: 700;
+  color: #0d1f3c;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  margin-bottom: 3px;
+  text-decoration: underline;
+  text-decoration-color: #c8d3e4;
+}
+
+/* ─── DISCLAIMER ─── */
+.disclaimer {
+  padding: 22px 40px;
+  background: #f7f9fc;
+  border-top: 1px solid #edf0f4;
+  font-family: 'Arial', sans-serif;
+  font-size: 11px;
+  color: #9aa8be;
+  line-height: 1.6;
+}
+.disclaimer p { margin-bottom: 8px; }
+.disclaimer p:last-child { margin-bottom: 0; }
+.disclaimer strong { color: #7a8a9e; }
+
+/* ─── FOOTER ─── */
+.footer {
+  background: #0d1f3c;
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  padding: 18px 40px;
+  font-family: 'Arial', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+}
+.footer a { color: #29b6f6; text-decoration: none; }
+.footer p { margin: 0; }
+.footer p:not(:first-child) { margin-top: 6px; }
+.footer-meta { font-size: 10px; opacity: 0.5; margin-top: 8px; }
+.footer-meta-small { font-size: 10px; opacity: 0.4; margin-top: 6px; }
+
+/* ─── HERO BRAND OUTLET ─── */
+.hero-brand-outlet {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* ─── STRATEGIC OUTLOOK LABEL ─── */
+.strategic-outlook {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+
+/* ─── STORY CARDS ─── */
+.story-card {
+  margin-bottom: 20px;
+  padding: 20px 22px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #9ca3af;
+  background-color: #ffffff;
+}
+
+.story-card.story-bullish { border-left-color: #10b981; }
+.story-card.story-bearish { border-left-color: #ef4444; }
+.story-card.story-neutral { border-left-color: #9ca3af; }
+
+.story-rank {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.story-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.story-title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #111827;
+  flex: 1;
+}
+
+.story-meta {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.story-meta-source {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.story-meta-dot {
+  margin: 0 6px;
+  color: #d1d5db;
+}
+
+.story-meta-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.story-summary {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #374151;
+  margin: 0 0 14px 0;
+}
+
+.story-why {
+  background-color: #f9fafb;
+  border-left: 3px solid #d1d5db;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+}
+
+.story-why-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.story-why p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.impact-row {
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f3;
+}
+
+.impact-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border-radius: 100px;
+  margin-right: 8px;
+}
+
+.impact-badge.bullish {
+  color: #059669;
+  background-color: #ecfdf5;
+}
+
+.impact-badge.bearish {
+  color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.impact-badge.neutral {
+  color: #6b7280;
+  background-color: #f3f4f6;
+}
+
+.impact-sector {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4b5563;
+  background-color: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 100px;
+  margin-right: 8px;
+}
+
+.impact-detail {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ─── BRIEF LIST SPACING ─── */
+.brief-list {
+  margin-bottom: 22px;
+}
+
+/* ─── INSIGHT GRID SPACING ─── */
+.insight-grid {
+  margin-bottom: 22px;
+}
+
+/* ─── IMAGE RESPONSIVENESS ─── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── TABLE RESPONSIVENESS ─── */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* ─── TEXT OPTIMIZATION ─── */
+a {
+  word-break: break-word;
+}
+
+/* ─── TOUCH-FRIENDLY LINKS ─── */
+@media (max-width: 768px) {
+  a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ─── PRINT STYLES ─── */
+@media print {
+  .wrapper { background: white; padding: 0; }
+  .container { max-width: 100%; box-shadow: none; }
+  .hero::before { display: none; }
+  .logo-top-right { display: none; }
+  a { color: inherit; text-decoration: underline; }
+  .footer { page-break-inside: avoid; }
+}
+
+/* ─── RESPONSIVE: TABLET (768px and below) ─── */
+@media (max-width: 768px) {
+  .wrapper { padding: 20px 10px; }
+  .container { max-width: 100%; border-radius: 0; }
+  .hero-inner { padding: 28px 24px 24px; }
+  .section { padding: 24px 24px; }
+  .hero-title { font-size: 24px; }
+  .section-title { font-size: 18px; }
+  .insight-grid { grid-template-columns: 1fr; }
+  .perf-table thead th { padding: 9px 10px; font-size: 9px; }
+  .perf-table td { padding: 8px 10px; font-size: 12px; }
+  .perf-table td:not(:first-child) { font-size: 11px; }
+  .disclaimer, .footer { padding: 16px 24px; font-size: 10px; }
+  .logo-top-right { max-width: 110px; max-height: 55px; top: 18px; right: 18px; }
+}
+
+/* ─── RESPONSIVE: MOBILE (600px and below) ─── */
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+  .wrapper { padding: 16px 8px; }
+  .container { margin: 0; }
+  .hero-inner { padding: 20px 16px 16px; }
+  .hero-brand { gap: 8px; margin-bottom: 16px; }
+  .hero-brand-name { font-size: 12px; }
+  .hero-brand-tagline { font-size: 8px; }
+  .hero-tag { font-size: 9px; padding: 3px 10px; margin-bottom: 8px; }
+  .hero-title { font-size: 20px; line-height: 1.2; margin-bottom: 10px; }
+  .hero-meta { font-size: 10px; }
+  
+  .logo-top-right { max-width: 90px; max-height: 45px; top: 12px; right: 12px; }
+  
+  .signal-strip { flex-wrap: wrap; }
+  .signal-item { 
+    flex: 0 0 50%; 
+    padding: 10px 12px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .signal-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.07); }
+  .signal-label { font-size: 7px; margin-bottom: 2px; }
+  .signal-value { font-size: 12px; }
+  
+  .eyebrow { font-size: 8px; margin-bottom: 12px; }
+  .section { padding: 18px 14px; border-bottom: 1px solid #f0f3f8; }
+  .section-title { font-size: 16px; margin-bottom: 12px; }
+  
+  .exec-box { padding: 14px 16px; font-size: 13px; line-height: 1.6; }
+  .kd-label { font-size: 9px; margin-bottom: 6px; }
+  .driver-pill { font-size: 11px; padding: 3px 10px; }
+  
+  .brief-list li { padding: 8px 0 8px 16px; font-size: 13px; }
+  .brief-list li::before { font-size: 10px; top: 10px; }
+  
+  /* Mobile-friendly table: Horizontal scroll */
+  .perf-table { font-size: 12px; }
+  .perf-table thead th { 
+    padding: 8px 8px;
+    font-size: 8px;
+  }
+  .perf-table td { 
+    padding: 7px 6px;
+    font-size: 11px;
+  }
+  .perf-table td:first-child { font-size: 12px; }
+  .perf-table td:not(:first-child) { font-size: 10px; }
+  
+  .insight-grid { gap: 12px; }
+  .insight-card { padding: 12px 14px; }
+  .ic-label { font-size: 9px; margin-bottom: 4px; }
+  .ic-value { font-size: 14px; }
+  .ic-sub { font-size: 11px; }
+  
+  .ib-item { padding: 10px 0; font-size: 13px; }
+  .ib-item .ib-title { font-size: 13px; margin-bottom: 2px; }
+  
+  .disclaimer { 
+    padding: 14px 14px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .disclaimer p { margin-bottom: 6px; }
+  
+  .footer { 
+    padding: 14px 14px;
+    font-size: 10px;
+  }
+  .footer p { margin-top: 4px; }
+}
+
+/* ─── RESPONSIVE: SMALL MOBILE (480px and below) ─── */
+@media (max-width: 480px) {
+  .wrapper { padding: 12px 6px; }
+  .hero-inner { padding: 16px 12px 12px; }
+  .hero-brand { flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 12px; }
+  .hero-brand-name { font-size: 11px; }
+  .hero-title { font-size: 18px; margin-bottom: 8px; }
+  
+  .logo-top-right { max-width: 80px; max-height: 40px; top: 10px; right: 10px; }
+  
+  .signal-label { font-size: 7px; }
+  .signal-value { font-size: 11px; }
+  
+  .section { padding: 14px 12px; }
+  .section-title { font-size: 15px; }
+  .eyebrow { font-size: 7.5px; }
+  
+  .exec-box { padding: 12px 14px; font-size: 12px; }
+  .brief-list li { padding: 6px 0 6px 14px; font-size: 12px; }
+  
+  /* Stack tables vertically on very small screens */
+  .perf-table { font-size: 11px; }
+  .perf-table thead th { padding: 6px 4px; font-size: 7px; }
+  .perf-table td { padding: 6px 4px; font-size: 10px; }
+  
+  .insight-card { padding: 10px 12px; }
+  .ic-label { font-size: 8px; }
+  .ic-value { font-size: 13px; }
+  
+  .disclaimer { padding: 12px 12px; font-size: 9px; }
+  .footer { padding: 12px 12px; font-size: 9px; }
+}
+
+/* ─── RESPONSIVE: EXTRA SMALL (< 360px) ─── */
+@media (max-width: 360px) {
+  .hero-title { font-size: 16px; }
+  .section-title { font-size: 14px; }
+  .logo-top-right { max-width: 70px; max-height: 35px; top: 8px; right: 8px; }
+  
+  .perf-table thead th { font-size: 6px; padding: 4px 3px; }
+  .perf-table td { font-size: 9px; padding: 5px 3px; }
+  .ic-value { font-size: 12px; }
+}</style>
+</head>
+<body style='background:#e8ecf0; font-family:"Georgia", "Times New Roman", serif; color:#1a1a2e; line-height:1.7'>
+<div class="wrapper" style="width:100%; padding:28px 12px; background:#e8ecf0" width="100%">
+<div class="container" style="max-width:720px; margin:0 auto; background:#fff; border-radius:4px; box-shadow:0 6px 32px rgba(0, 0, 0, 0.13); overflow:hidden">
+
+  <!-- ═══════════════════════════════════════
+       HERO BANNER
+  ════════════════════════════════════════ -->
+  <div class="hero" style="background:linear-gradient(160deg, #0a1628 0%, #0d2244 45%, #1a3a5c 80%, #1e4976 100%); color:#fff; padding:0; position:relative; overflow:hidden">
+    <img src="NI_Technologies_logo.jpg" alt="NI Technologies Logo" class="logo-top-right" style="border:0; outline:none; text-decoration:none; -ms-interpolation-mode:nearest-neighbor; max-width:120px; height:auto; display:block; position:absolute; top:20px; right:20px; max-height:60px; object-fit:contain" height="auto">
+    <div class="hero-inner" style="padding:36px 40px 32px; position:relative; z-index:1">
+      <div class="hero-brand" style="display:flex; align-items:center; gap:12px; margin-bottom:20px">
+        </div>
+        <div class="hero-brand-outlet" style="margin-left:auto; text-align:right" align="right">
+        </div>
+      </div>
+      <div class="hero-tag" style='display:inline-block; font-family:"Arial", sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#29b6f6; border:1px solid rgba(41, 182, 246, 0.4); padding:4px 12px; border-radius:2px; margin-bottom:10px'>Weekly Market Brief</div>
+      <div class="hero-title" style='font-family:"Georgia", serif; font-size:30px; font-weight:700; line-height:1.15; color:#fff; letter-spacing:-0.3px; margin-bottom:14px'>
+Info Tech Leadership, High Beta Factor Dynamics      </div>
+      <div class="hero-meta" style='font-family:"Arial", sans-serif; font-size:11px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:rgba(255, 255, 255, 0.55)'>Report Date: <span style="color:rgba(255, 255, 255, 0.85)">Sunday, August 09, 2026</span>
+</div>
+    </div>
+
+    <!-- Signal strip: quick top-level numbers -->
+    <div class="signal-strip" style="display:flex; background:#0d1f3c; border-top:1px solid rgba(255, 255, 255, 0.06)">
+      <div class="signal-item" style='flex:1; padding:12px 16px; border-right:1px solid rgba(255, 255, 255, 0.07); text-align:center; font-family:"Arial", sans-serif' align="center">
+        <span class="signal-label" style="font-size:8px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(255, 255, 255, 0.4); display:block; margin-bottom:3px">Market Posture</span>
+          <span class="signal-value pos" style="font-size:13px; font-weight:700; color:#4caf82">Risk-On</span>
+      </div>
+      <div class="signal-item" style='flex:1; padding:12px 16px; border-right:1px solid rgba(255, 255, 255, 0.07); text-align:center; font-family:"Arial", sans-serif' align="center">
+        <span class="signal-label" style="font-size:8px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(255, 255, 255, 0.4); display:block; margin-bottom:3px">S&amp;P 500 WTD</span>
+        <span class="signal-value pos" style="font-size:13px; font-weight:700; color:#4caf82">+3.58%</span>
+      </div>
+      <div class="signal-item" style='flex:1; padding:12px 16px; border-right:1px solid rgba(255, 255, 255, 0.07); text-align:center; font-family:"Arial", sans-serif' align="center">
+        <span class="signal-label" style="font-size:8px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(255, 255, 255, 0.4); display:block; margin-bottom:3px">Leading Factor</span>
+        <span class="signal-value pos" style="font-size:13px; font-weight:700; color:#4caf82">High Beta +5.76%</span>
+      </div>
+      <div class="signal-item" style='flex:1; padding:12px 16px; border-right:none; text-align:center; font-family:"Arial", sans-serif' align="center">
+        <span class="signal-label" style="font-size:8px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(255, 255, 255, 0.4); display:block; margin-bottom:3px">Top Sector</span>
+        <span class="signal-value pos" style="font-size:13px; font-weight:700; color:#4caf82">Info Tech +7.20%</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       EXECUTIVE SUMMARY + MARKET SECTIONS (Jinja2)
+  ════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════
+       EXECUTIVE SUMMARY
+  ════════════════════════════════════════ -->
+  <div class="section" style="padding:32px 40px; border-bottom:1px solid #edf0f4">
+    <div class="eyebrow" style='font-family:"Arial", sans-serif; font-size:9px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:14px; display:flex; align-items:center; gap:8px'>Executive Summary</div>
+    <div class="exec-box" style="background:#f5f8fd; border-left:4px solid #1a3a5c; border-radius:0 4px 4px 0; padding:18px 22px; font-size:14.5px; color:#2d3a4f; line-height:1.75">
+      <div class="key-drivers" style="margin-top:16px; padding-top:14px; border-top:1px dashed #c8d3e4">
+        <div class="kd-label" style='font-family:"Arial", sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:8px'>Key Themes This Week</div>
+        <span class="driver-pill" style='display:inline-block; background:#e8f0fe; color:#1a3a5c; font-size:12px; font-weight:600; font-family:"Arial", sans-serif; padding:4px 12px; border-radius:20px; margin:3px 3px 0 0'>Growth Leadership</span>
+        <span class="driver-pill" style='display:inline-block; background:#e8f0fe; color:#1a3a5c; font-size:12px; font-weight:600; font-family:"Arial", sans-serif; padding:4px 12px; border-radius:20px; margin:3px 3px 0 0'>Risk-On Sentiment</span>
+        <span class="driver-pill" style='display:inline-block; background:#e8f0fe; color:#1a3a5c; font-size:12px; font-weight:600; font-family:"Arial", sans-serif; padding:4px 12px; border-radius:20px; margin:3px 3px 0 0'>Info Tech Outperformance</span>
+        <span class="driver-pill" style='display:inline-block; background:#e8f0fe; color:#1a3a5c; font-size:12px; font-weight:600; font-family:"Arial", sans-serif; padding:4px 12px; border-radius:20px; margin:3px 3px 0 0'>Energy Weakness</span>
+        <span class="driver-pill" style='display:inline-block; background:#e8f0fe; color:#1a3a5c; font-size:12px; font-weight:600; font-family:"Arial", sans-serif; padding:4px 12px; border-radius:20px; margin:3px 3px 0 0'>High Beta Factor Leadership</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       TOP STORIES
+  ════════════════════════════════════════ -->
+  <div class="section" style="padding:32px 40px; border-bottom:1px solid #edf0f4">
+    <div class="eyebrow" style='font-family:"Arial", sans-serif; font-size:9px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:14px; display:flex; align-items:center; gap:8px'>Top Stories</div>
+    
+    <div class="story-card story-bullish" style="margin-bottom:20px; padding:20px 22px; border-radius:8px; border:1px solid #e5e7eb; border-left:4px solid #9ca3af; background-color:#fff; border-left-color:#10b981" bgcolor="#ffffff">
+      <div class="story-rank" style="font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#9ca3af; margin-bottom:8px">Story 01 of 5</div>
+
+      <div class="story-title-wrapper" style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px">
+        <h3 class="story-title" style="margin:0; font-size:17px; line-height:1.35; font-weight:700; color:#111827; flex:1">Earnings beats ease concerns over record U.S. stock rally - WSJ</h3>
+      </div>
+
+      <div class="story-meta" style="font-size:12px; color:#6b7280; margin-bottom:12px">
+        <span class="story-meta-source" style="font-weight:600; color:#4b5563">Investing.com</span>
+        <span class="story-meta-dot" style="margin:0 6px; color:#d1d5db">·</span>
+        <span class="story-meta-date">Aug 09, 2026 06:38 UTC</span>
+        <a href="https://www.investing.com/news/stock-market-news/earnings-beats-ease-concerns-over-record-us-stock-rally-4847712" class="story-meta-link" style="word-break:break-word; color:#2563eb; text-decoration:none; font-weight:600; margin-left:10px">Read Full Article →</a>
+      </div>
+
+      <p class="story-summary" style="font-size:14px; line-height:1.65; color:#374151; margin:0 0 14px 0">Recent earnings reports have exceeded expectations, alleviating concerns about the sustainability of the record U.S. stock rally. This development is based on data showing that a significant number of companies have beaten their projected earnings. The positive earnings reports have helped to stabilize market confidence.</p>
+
+      <div class="story-why" style="background-color:#f9fafb; border-left:3px solid #d1d5db; border-radius:4px; padding:10px 14px; margin-bottom:14px" bgcolor="#f9fafb">
+        <span class="story-why-label" style="display:block; font-size:10px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#6b7280; margin-bottom:4px">Why It Matters</span>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#4b5563">The earnings beats are significant for investors and policymakers as they indicate the underlying strength of the U.S. economy and corporate sector, potentially justifying current stock valuations and influencing future monetary policy decisions.</p>
+      </div>
+
+      <div class="impact-row" style="padding-top:12px; border-top:1px solid #f0f0f3">
+          <span class="impact-badge bullish" style="display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.02em; padding:4px 10px; border-radius:100px; margin-right:8px; color:#059669; background-color:#ecfdf5" bgcolor="#ecfdf5">▲ Bullish</span>
+<span class="impact-sector" style="display:inline-block; font-size:11px; font-weight:600; color:#4b5563; background-color:#f3f4f6; padding:4px 10px; border-radius:100px; margin-right:8px" bgcolor="#f3f4f6">U.S. Stocks</span><span class="impact-detail" style="font-size:13px; color:#6b7280">Positive earnings surprises are likely to boost investor sentiment and support the ongoing stock rally, at least in the short term.</span>      </div>
+    </div>
+    <div class="story-card story-bullish" style="margin-bottom:20px; padding:20px 22px; border-radius:8px; border:1px solid #e5e7eb; border-left:4px solid #9ca3af; background-color:#fff; border-left-color:#10b981" bgcolor="#ffffff">
+      <div class="story-rank" style="font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#9ca3af; margin-bottom:8px">Story 02 of 5</div>
+
+      <div class="story-title-wrapper" style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px">
+        <h3 class="story-title" style="margin:0; font-size:17px; line-height:1.35; font-weight:700; color:#111827; flex:1">Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard</h3>
+      </div>
+
+      <div class="story-meta" style="font-size:12px; color:#6b7280; margin-bottom:12px">
+        <span class="story-meta-source" style="font-weight:600; color:#4b5563">CNBC Markets</span>
+        <span class="story-meta-dot" style="margin:0 6px; color:#d1d5db">·</span>
+        <span class="story-meta-date">Aug 08, 2026 13:28 UTC</span>
+        <a href="https://www.cnbc.com/2026/08/08/berkshire-hathaway-earnings-q2-2026.html" class="story-meta-link" style="word-break:break-word; color:#2563eb; text-decoration:none; font-weight:600; margin-left:10px">Read Full Article →</a>
+      </div>
+
+      <p class="story-summary" style="font-size:14px; line-height:1.65; color:#374151; margin:0 0 14px 0">Berkshire's earnings increased last quarter, driven by strong performance in energy, railroad, and manufacturing sectors, which offset weaker insurance results. CEO Greg Abel is beginning to utilize Warren Buffett's substantial cash reserves. This strategic deployment of capital aims to leverage new opportunities.</p>
+
+      <div class="story-why" style="background-color:#f9fafb; border-left:3px solid #d1d5db; border-radius:4px; padding:10px 14px; margin-bottom:14px" bgcolor="#f9fafb">
+        <span class="story-why-label" style="display:block; font-size:10px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#6b7280; margin-bottom:4px">Why It Matters</span>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#4b5563">The effective use of Berkshire's cash hoard by CEO Greg Abel is significant for investors and the broader economy, as it indicates the company's ability to adapt and capitalize on new opportunities, potentially influencing market trends and investor confidence.</p>
+      </div>
+
+      <div class="impact-row" style="padding-top:12px; border-top:1px solid #f0f0f3">
+          <span class="impact-badge bullish" style="display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.02em; padding:4px 10px; border-radius:100px; margin-right:8px; color:#059669; background-color:#ecfdf5" bgcolor="#ecfdf5">▲ Bullish</span>
+<span class="impact-sector" style="display:inline-block; font-size:11px; font-weight:600; color:#4b5563; background-color:#f3f4f6; padding:4px 10px; border-radius:100px; margin-right:8px" bgcolor="#f3f4f6">Conglomerates/Value Stocks</span><span class="impact-detail" style="font-size:13px; color:#6b7280">Strong earnings and strategic capital deployment may boost investor confidence in Berkshire and similar value stocks.</span>      </div>
+    </div>
+    <div class="story-card story-bullish" style="margin-bottom:20px; padding:20px 22px; border-radius:8px; border:1px solid #e5e7eb; border-left:4px solid #9ca3af; background-color:#fff; border-left-color:#10b981" bgcolor="#ffffff">
+      <div class="story-rank" style="font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#9ca3af; margin-bottom:8px">Story 03 of 5</div>
+
+      <div class="story-title-wrapper" style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px">
+        <h3 class="story-title" style="margin:0; font-size:17px; line-height:1.35; font-weight:700; color:#111827; flex:1">Here’s how we played the massive rebound in AI stocks this week</h3>
+      </div>
+
+      <div class="story-meta" style="font-size:12px; color:#6b7280; margin-bottom:12px">
+        <span class="story-meta-source" style="font-weight:600; color:#4b5563">CNBC Markets</span>
+        <span class="story-meta-dot" style="margin:0 6px; color:#d1d5db">·</span>
+        <span class="story-meta-date">Aug 08, 2026 14:07 UTC</span>
+        <a href="https://www.cnbc.com/2026/08/08/heres-how-we-played-the-massive-rebound-in-ai-stocks-this-week.html" class="story-meta-link" style="word-break:break-word; color:#2563eb; text-decoration:none; font-weight:600; margin-left:10px">Read Full Article →</a>
+      </div>
+
+      <p class="story-summary" style="font-size:14px; line-height:1.65; color:#374151; margin:0 0 14px 0">AI stocks experienced a significant rebound, contributing to record highs in two major averages. This surge follows a previous downturn, indicating a volatile market. The rebound is attributed to renewed investor interest in AI technology.</p>
+
+      <div class="story-why" style="background-color:#f9fafb; border-left:3px solid #d1d5db; border-radius:4px; padding:10px 14px; margin-bottom:14px" bgcolor="#f9fafb">
+        <span class="story-why-label" style="display:block; font-size:10px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#6b7280; margin-bottom:4px">Why It Matters</span>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#4b5563">The rebound in AI stocks is significant for investors and policymakers as it reflects growing confidence in the sector's potential for long-term growth and innovation. This confidence can have broader implications for the technology sector and the overall economy.</p>
+      </div>
+
+      <div class="impact-row" style="padding-top:12px; border-top:1px solid #f0f0f3">
+          <span class="impact-badge bullish" style="display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.02em; padding:4px 10px; border-radius:100px; margin-right:8px; color:#059669; background-color:#ecfdf5" bgcolor="#ecfdf5">▲ Bullish</span>
+<span class="impact-sector" style="display:inline-block; font-size:11px; font-weight:600; color:#4b5563; background-color:#f3f4f6; padding:4px 10px; border-radius:100px; margin-right:8px" bgcolor="#f3f4f6">Technology Sector</span><span class="impact-detail" style="font-size:13px; color:#6b7280">The rebound in AI stocks is likely to boost investor sentiment, driving short-term gains in the technology sector, particularly among companies focused on artificial intelligence and related technologies.</span>      </div>
+    </div>
+    <div class="story-card story-bearish" style="margin-bottom:20px; padding:20px 22px; border-radius:8px; border:1px solid #e5e7eb; border-left:4px solid #9ca3af; background-color:#fff; border-left-color:#ef4444" bgcolor="#ffffff">
+      <div class="story-rank" style="font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#9ca3af; margin-bottom:8px">Story 04 of 5</div>
+
+      <div class="story-title-wrapper" style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px">
+        <h3 class="story-title" style="margin:0; font-size:17px; line-height:1.35; font-weight:700; color:#111827; flex:1">More workers join strike at BHP’s Port Hedland iron ore operations</h3>
+      </div>
+
+      <div class="story-meta" style="font-size:12px; color:#6b7280; margin-bottom:12px">
+        <span class="story-meta-source" style="font-weight:600; color:#4b5563">Investing.com</span>
+        <span class="story-meta-dot" style="margin:0 6px; color:#d1d5db">·</span>
+        <span class="story-meta-date">Aug 09, 2026 04:48 UTC</span>
+        <a href="https://www.investing.com/news/stock-market-news/more-workers-join-strike-at-bhps-port-hedland-iron-ore-operations-4847699" class="story-meta-link" style="word-break:break-word; color:#2563eb; text-decoration:none; font-weight:600; margin-left:10px">Read Full Article →</a>
+      </div>
+
+      <p class="story-summary" style="font-size:14px; line-height:1.65; color:#374151; margin:0 0 14px 0">Additional workers have joined the strike at BHP's Port Hedland iron ore operations, expanding the labor dispute. The strike affects a significant portion of BHP's iron ore production in Australia. This development follows an ongoing labor disagreement.</p>
+
+      <div class="story-why" style="background-color:#f9fafb; border-left:3px solid #d1d5db; border-radius:4px; padding:10px 14px; margin-bottom:14px" bgcolor="#f9fafb">
+        <span class="story-why-label" style="display:block; font-size:10px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#6b7280; margin-bottom:4px">Why It Matters</span>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#4b5563">The strike at BHP's Port Hedland operations has direct implications for global iron ore supply, potentially influencing prices and affecting steel producers and other industries reliant on this commodity.</p>
+      </div>
+
+      <div class="impact-row" style="padding-top:12px; border-top:1px solid #f0f0f3">
+          <span class="impact-badge bearish" style="display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.02em; padding:4px 10px; border-radius:100px; margin-right:8px; color:#dc2626; background-color:#fef2f2" bgcolor="#fef2f2">▼ Bearish</span>
+<span class="impact-sector" style="display:inline-block; font-size:11px; font-weight:600; color:#4b5563; background-color:#f3f4f6; padding:4px 10px; border-radius:100px; margin-right:8px" bgcolor="#f3f4f6">Mining and Materials Sector</span><span class="impact-detail" style="font-size:13px; color:#6b7280">The strike may lead to reduced iron ore output, potentially increasing prices and negatively impacting companies dependent on this resource.</span>      </div>
+    </div>
+    <div class="story-card story-bullish" style="margin-bottom:20px; padding:20px 22px; border-radius:8px; border:1px solid #e5e7eb; border-left:4px solid #9ca3af; background-color:#fff; border-left-color:#10b981" bgcolor="#ffffff">
+      <div class="story-rank" style="font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#9ca3af; margin-bottom:8px">Story 05 of 5</div>
+
+      <div class="story-title-wrapper" style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px">
+        <h3 class="story-title" style="margin:0; font-size:17px; line-height:1.35; font-weight:700; color:#111827; flex:1">Grindr's AI spend is paying off and its pricey new tier has had some surprises, CEO says</h3>
+      </div>
+
+      <div class="story-meta" style="font-size:12px; color:#6b7280; margin-bottom:12px">
+        <span class="story-meta-source" style="font-weight:600; color:#4b5563">CNBC Markets</span>
+        <span class="story-meta-dot" style="margin:0 6px; color:#d1d5db">·</span>
+        <span class="story-meta-date">Aug 06, 2026 22:26 UTC</span>
+        <a href="https://www.cnbc.com/2026/08/06/grindr-grnd-stock-earnings-ai.html" class="story-meta-link" style="word-break:break-word; color:#2563eb; text-decoration:none; font-weight:600; margin-left:10px">Read Full Article →</a>
+      </div>
+
+      <p class="story-summary" style="font-size:14px; line-height:1.65; color:#374151; margin:0 0 14px 0">Grindr's investment in AI is yielding positive results, enhancing engineering productivity and supporting a new premium tier priced at $350 per month. This has led to stronger subscriber growth and retention. The company's CEO highlighted the success of this strategy.</p>
+
+      <div class="story-why" style="background-color:#f9fafb; border-left:3px solid #d1d5db; border-radius:4px; padding:10px 14px; margin-bottom:14px" bgcolor="#f9fafb">
+        <span class="story-why-label" style="display:block; font-size:10px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#6b7280; margin-bottom:4px">Why It Matters</span>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#4b5563">The effective use of AI by Grindr has significant implications for investors and the broader tech industry, demonstrating the potential for AI-driven growth and revenue enhancement in subscription-based services.</p>
+      </div>
+
+      <div class="impact-row" style="padding-top:12px; border-top:1px solid #f0f0f3">
+          <span class="impact-badge bullish" style="display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.02em; padding:4px 10px; border-radius:100px; margin-right:8px; color:#059669; background-color:#ecfdf5" bgcolor="#ecfdf5">▲ Bullish</span>
+<span class="impact-sector" style="display:inline-block; font-size:11px; font-weight:600; color:#4b5563; background-color:#f3f4f6; padding:4px 10px; border-radius:100px; margin-right:8px" bgcolor="#f3f4f6">Tech/SaaS</span><span class="impact-detail" style="font-size:13px; color:#6b7280">The successful integration of AI and the introduction of a high-tier subscription service may lead to increased investor confidence in Grindr and similar companies, potentially boosting their stock prices.</span>      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       GLOBAL MARKET PULSE
+  ════════════════════════════════════════ -->
+  <div class="section" style="padding:32px 40px; border-bottom:1px solid #edf0f4">
+    <div class="eyebrow" style='font-family:"Arial", sans-serif; font-size:9px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:14px; display:flex; align-items:center; gap:8px'>Global Market Pulse</div>
+    <div class="section-title" style='font-family:"Georgia", serif; font-size:20px; font-weight:700; color:#0d1f3c; margin-bottom:16px; line-height:1.25'>International Index Performance</div>
+
+    <ul class="brief-list" style="list-style:none; margin-bottom:22px">
+      <li style="padding:10px 0 10px 20px; border-bottom:1px solid #f0f3f8; font-size:14px; color:#3d4f6a; position:relative">NASDAQ 100 (US) outperformed global peers with a WTD return of +5.12%.</li>
+      <li style="padding:10px 0 10px 20px; border-bottom:1px solid #f0f3f8; font-size:14px; color:#3d4f6a; position:relative">Hang Seng (HK) saw the steepest weekly decline at -1.31%.</li>
+      <li style="padding:10px 0 10px 20px; border-bottom:none; font-size:14px; color:#3d4f6a; position:relative">Significant regional divergence this week: a 6.4pp spread between the best and worst performers.</li>
+    </ul>
+
+    <table class="perf-table" style='border-spacing:0; border-collapse:collapse; width:100%; overflow-x:auto; display:block; font-family:"Arial", sans-serif; font-size:13px; margin-top:4px' width="100%">
+      <thead>
+        <tr style="background:#0d1f3c; color:#fff">
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">Global Markets</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">WTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">MTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">QTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">YTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">2025</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">2024</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">S&amp;P 500 (US)</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.58%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.58%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.44%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+12.49%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+16.75%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+23.84%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">NASDAQ 100 (US)</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.12%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.12%</td>
+          <td class="neg-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.35), rgba(198, 40, 40, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-1.83%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+16.73%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+20.12%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+25.98%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Dow Jones (US)</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.96%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.96%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.28%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+11.72%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+13.61%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+12.96%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">S&amp;P/TSX Composite (CAD)</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.28%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.28%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.37%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+14.17%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+29.43%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+17.47%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">FTSE 100 (UK)</td>
+          
+          <td class="pos-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">+0.40%</td>
+          <td class="pos-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">+0.30%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.04%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+9.76%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+21.51%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.69%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">CAC 40 (France)</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.17%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.41%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.53%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+6.94%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+10.42%</td>
+          <td class="neg-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.35), rgba(198, 40, 40, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-2.15%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">DAX 40 (Germany)</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.22%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.69%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.11%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+7.47%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+23.01%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+18.85%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">STOXX Europe 600 (EUR)</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.25%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.70%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.28%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+11.38%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+17.42%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.39%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Nikkei 225 (Japan)</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.90%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.93%</td>
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-6.91%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+30.33%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+26.18%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+19.22%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Hang Seng (HK)</td>
+          
+          <td class="neg-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.35), rgba(198, 40, 40, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-1.31%</td>
+          <td class="neg-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.15), rgba(198, 40, 40, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">-0.84%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+12.18%</td>
+          <td class="pos-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">+0.15%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+27.77%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+17.67%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">MSCI World (Developed)</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.49%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.49%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.86%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+13.30%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+21.69%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+19.13%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">MSCI ACWI</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.20%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.20%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.85%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+14.10%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+22.87%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+17.77%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">MSCI EM (Emerging)</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.42%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.42%</td>
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-4.05%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+20.23%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+33.95%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+6.85%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       US EQUITY STYLE & FACTOR DYNAMICS
+  ════════════════════════════════════════ -->
+  <div class="section" style="padding:32px 40px; border-bottom:1px solid #edf0f4">
+    <div class="eyebrow" style='font-family:"Arial", sans-serif; font-size:9px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:14px; display:flex; align-items:center; gap:8px'>US Equity Style &amp; Factor Dynamics</div>
+    <div class="section-title" style='font-family:"Georgia", serif; font-size:20px; font-weight:700; color:#0d1f3c; margin-bottom:16px; line-height:1.25'>Style Factor Performance Update</div>
+
+    <div class="insight-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:4px; margin-bottom:22px">
+      <div class="insight-card green" style="background:#f5f8fd; border-top:3px solid #1a3a5c; border-radius:4px; padding:14px 16px; border-top-color:#2e7d52">
+        <div class="ic-label" style='font-family:"Arial", sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:6px'>Leading Factor</div>
+        <div class="ic-value" style='font-family:"Georgia", serif; font-size:15px; font-weight:700; color:#0d1f3c; line-height:1.3'>High Beta +5.76%</div>
+        <div class="ic-sub" style='font-size:12px; color:#5a6e88; margin-top:4px; font-family:"Arial", sans-serif'>Best performing style this week</div>
+      </div>
+      <div class="insight-card red" style="background:#f5f8fd; border-top:3px solid #1a3a5c; border-radius:4px; padding:14px 16px; border-top-color:#c62828">
+        <div class="ic-label" style='font-family:"Arial", sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:6px'>Lagging Factor</div>
+        <div class="ic-value" style='font-family:"Georgia", serif; font-size:15px; font-weight:700; color:#0d1f3c; line-height:1.3'>Low Vol High Div +0.48%</div>
+        <div class="ic-sub" style='font-size:12px; color:#5a6e88; margin-top:4px; font-family:"Arial", sans-serif'>Weakest performing style this week</div>
+      </div>
+    </div>
+
+    <table class="perf-table" style='border-spacing:0; border-collapse:collapse; width:100%; overflow-x:auto; display:block; font-family:"Arial", sans-serif; font-size:13px; margin-top:4px' width="100%">
+      <thead>
+        <tr style="background:#0d1f3c; color:#fff">
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">Style Factors</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">WTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">MTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">QTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">YTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">2025</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">2024</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">High Beta</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.76%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.76%</td>
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-4.94%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+25.49%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+33.73%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+8.96%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Growth</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.06%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.06%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.32%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+14.65%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+21.77%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+37.01%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Momentum</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.25%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.25%</td>
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-9.77%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+22.61%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+22.78%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+33.51%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Quality</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.90%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.90%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.85%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+13.23%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+13.17%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+22.63%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Low Volatility</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.75%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.75%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.31%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+6.74%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+8.64%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+15.65%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Equal Weight</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.36%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.36%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.44%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+14.84%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+12.38%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+12.59%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Value</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.76%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.76%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.84%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+11.25%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+13.96%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+11.89%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Pure Value</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.06%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.06%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.61%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+17.05%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+19.21%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+11.65%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Low Vol High Div</td>
+          
+          <td class="pos-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">+0.48%</td>
+          <td class="pos-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">+0.48%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.88%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+12.17%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.47%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+17.56%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       S&P 500 SECTOR PERFORMANCE
+  ════════════════════════════════════════ -->
+  <div class="section" style="padding:32px 40px; border-bottom:1px solid #edf0f4">
+    <div class="eyebrow" style='font-family:"Arial", sans-serif; font-size:9px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#8a9ab5; margin-bottom:14px; display:flex; align-items:center; gap:8px'>S&amp;P 500 Sector &amp; Industry Performance</div>
+    <div class="section-title" style='font-family:"Georgia", serif; font-size:20px; font-weight:700; color:#0d1f3c; margin-bottom:16px; line-height:1.25'>Sector / Market Cap Analysis</div>
+
+    <table class="perf-table" style='border-spacing:0; border-collapse:collapse; width:100%; overflow-x:auto; display:block; font-family:"Arial", sans-serif; font-size:13px; margin-top:4px' width="100%">
+      <thead>
+        <tr style="background:#0d1f3c; color:#fff">
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">S&amp;P 500 Sector</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">WTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">MTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">QTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">YTD</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">2025</th>
+          <th style="padding:11px 14px; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-align:left" align="left">2024</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Info Tech</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+7.20%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+7.20%</td>
+          <td class="neg-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.35), rgba(198, 40, 40, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-1.34%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+29.58%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+24.81%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+22.65%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Materials</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.82%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.82%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.99%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+16.54%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+11.31%</td>
+          <td class="neg-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.15), rgba(198, 40, 40, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">-0.26%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Consumer Discretionary</td>
+          
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.25%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.25%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.20%</td>
+          <td class="neg-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.15), rgba(198, 40, 40, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">-0.02%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+7.41%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+27.47%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Industrials</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.97%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.97%</td>
+          <td class="neg-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.15), rgba(198, 40, 40, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">-0.03%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+19.01%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+20.20%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+17.45%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Communication Services</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.78%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.78%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+3.85%</td>
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-5.41%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+23.27%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+35.15%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Healthcare</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.93%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.93%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.42%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+7.33%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+15.43%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.23%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Financials</td>
+          
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.16%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+1.16%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+7.44%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+5.29%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+15.88%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+30.42%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Consumer Staples</td>
+          
+          <td class="pos-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">+0.08%</td>
+          <td class="pos-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.15), rgba(76, 175, 80, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">+0.08%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.47%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+10.29%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.44%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+11.86%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Real Estate</td>
+          
+          <td class="neg-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.15), rgba(198, 40, 40, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">-0.20%</td>
+          <td class="neg-small" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.15), rgba(198, 40, 40, 0.08)); padding:10px 14px; border-bottom:1px solid #edf0f4">-0.20%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.16%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+12.18%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.39%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.27%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Utilities</td>
+          
+          <td class="neg-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.35), rgba(198, 40, 40, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-1.67%</td>
+          <td class="neg-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.35), rgba(198, 40, 40, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-1.67%</td>
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-3.82%</td>
+          <td class="pos-medium" style="color:#3d4f6a; background:linear-gradient(to right, rgba(76, 175, 80, 0.35), rgba(76, 175, 80, 0.2)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+2.88%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+16.65%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+23.43%</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px; border-bottom:1px solid #edf0f4; color:#1a2a40; font-weight:600">Energy</td>
+          
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-3.44%</td>
+          <td class="neg-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(198, 40, 40, 0.85), rgba(239, 83, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">-3.44%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+8.27%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+29.66%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+9.90%</td>
+          <td class="pos-large" style="color:#3d4f6a; background:linear-gradient(to right, rgba(46, 125, 82, 0.85), rgba(76, 175, 80, 0.65)); font-weight:700; padding:10px 14px; border-bottom:1px solid #edf0f4">+4.19%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       DISCLAIMER
+  ════════════════════════════════════════ -->
+  <div class="disclaimer" style='padding:22px 40px; background:#f7f9fc; border-top:1px solid #edf0f4; font-family:"Arial", sans-serif; font-size:11px; color:#9aa8be; line-height:1.6'>
+    <p style="margin-bottom:8px"><strong style="color:#7a8a9e">Disclaimer:</strong> This material is provided for <strong style="color:#7a8a9e">informational and educational purposes only</strong> and does not constitute investment, financial, legal, accounting, or tax advice. The views and opinions expressed are those of the author as of the date of publication and are subject to change without notice based on market and other conditions.</p>
+    <p style="margin-bottom:8px">This content should not be construed as a <strong style="color:#7a8a9e">solicitation, offer, or recommendation</strong> to buy or sell any securities or to adopt any particular investment strategy. The information contained herein has been obtained from sources believed to be reliable; however, its accuracy or completeness is not guaranteed.</p>
+    <p style="margin-bottom:0">Investing involves risk, including the possible loss of principal. Past performance is not indicative of future results, and no assurance can be given that any investment objectives will be achieved.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <div class="footer" style='background:#0d1f3c; color:rgba(255, 255, 255, 0.45); text-align:center; padding:18px 40px; font-family:"Arial", sans-serif; font-size:11px; letter-spacing:0.3px' align="center">
+    <p style="margin:0">NorthernInvest Technologies Inc.  ·  Daily Market Brief  ·  Sunday, August 09, 2026</p>
+    <p style="margin:0">
+      <a href="#" style="word-break:break-word; color:#29b6f6; text-decoration:none">Unsubscribe</a>  |  <a href="#" style="word-break:break-word; color:#29b6f6; text-decoration:none">View Archive</a>  |  <a href="#" style="word-break:break-word; color:#29b6f6; text-decoration:none">Manage Preferences</a>
+    </p>
+    <p class="footer-meta" style="font-size:10px; opacity:0.5; margin-top:8px; margin:0">Independent. Disciplined. Aligned.  ·  Rooted in Canada. Investing for Generations.</p>
+    <p class="footer-meta-small" style="font-size:10px; opacity:0.4; margin-top:6px; margin:0">Generated 2026-08-09 01:03 PM IST (2026-08-09 07:33:00 UTC)</p>
+  </div>
+
+</div>
+<!-- /container -->
+<!-- /wrapper -->
+</body>
+</html>

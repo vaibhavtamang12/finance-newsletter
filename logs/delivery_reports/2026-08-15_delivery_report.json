@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "sent_at": "2026-08-15T07:07:25.516078+00:00",
+    "newsletter_date": "2026-08-15",
+    "smtp_server": "smtp.gmail.com",
+    "pipeline_version": "v1.0.0"
+  },
+  "stats": {
+    "total": 3,
+    "sent": 3,
+    "failed": 0
+  },
+  "delivery_log": [
+    {
+      "email": "deadlyhacker12@gmail.com",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 August 15"
+    },
+    {
+      "email": "hello@northerninvest.ca",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 August 15"
+    },
+    {
+      "email": "prlinsightspartners@gmail.com",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 August 15"
+    }
+  ]
+}

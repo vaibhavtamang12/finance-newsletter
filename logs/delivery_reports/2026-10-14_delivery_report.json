@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "sent_at": "2026-10-14T12:15:10.603289+00:00",
+    "newsletter_date": "2026-10-14",
+    "smtp_server": "smtp.gmail.com",
+    "pipeline_version": "v1.0.0"
+  },
+  "stats": {
+    "total": 3,
+    "sent": 3,
+    "failed": 0
+  },
+  "delivery_log": [
+    {
+      "email": "deadlyhacker12@gmail.com",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 October 14"
+    },
+    {
+      "email": "hello@northerninvest.ca",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 October 14"
+    },
+    {
+      "email": "prlinsightspartners@gmail.com",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 October 14"
+    }
+  ]
+}

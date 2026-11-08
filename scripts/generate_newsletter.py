@@ -2,7 +2,7 @@
 """
 generate_newsletter.py - Newsletter Rendering Module (Jinja2)
 
-Loads AI-summarized articles and optional market performance data,
+Loads market performance data,
 renders Markdown & HTML templates, and archives outputs in date-stamped
 directories for version control.
 
@@ -12,7 +12,6 @@ Template context variables:
   - generated_at (str)
   - executive_summary (str)          # optional narrative paragraph
   - key_themes (list[str])           # optional theme pills
-  - articles (list[dict])            # daily news articles
   - global_markets (list[dict])      # optional WTD/MTD/QTD/YTD rows
   - global_market_insights (list[str])
   - style_factors (list[dict])       # optional WTD/MTD/QTD/YTD rows
@@ -26,7 +25,7 @@ import re
 import sys
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Optional, Tuple
 from jinja2 import Environment, FileSystemLoader, TemplateNotFound
 from premailer import Premailer
 
@@ -34,15 +33,10 @@ from premailer import Premailer
 # CONFIGURATION & PATHS
 # ============================================================================
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SUMMARIES_DIR = PROJECT_ROOT / "data" / "summaries"
 MARKET_DATA_DIR = PROJECT_ROOT / "data" / "market"   # optional: drop market_data.json here
 NEWSLETTER_DIR = PROJECT_ROOT / "newsletters"
 TEMPLATE_DIR = PROJECT_ROOT / "templates"
 LOG_DIR = PROJECT_ROOT / "logs"
-
-# Maximum number of news articles to feature in the "Top Stories" section.
-# Articles are sorted by relevance_score (if present) before truncation.
-MAX_ARTICLES = int(os.getenv("NEWSLETTER_MAX_ARTICLES", "3"))
 
 NEWSLETTER_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -122,23 +116,6 @@ jinja_env = setup_jinja_env()
 # ============================================================================
 # DATA LOADING
 # ============================================================================
-def load_latest_summarized() -> Optional[Tuple[List[Dict], Path]]:
-    """Locate and load the most recent AI-summarized JSON payload."""
-    summary_files = sorted(SUMMARIES_DIR.glob("*_summarized.json"))
-    if not summary_files:
-        logger.error("❌ No summarized data found in data/summaries/")
-        return None
-
-    target_file = summary_files[-1]
-    try:
-        with open(target_file, "r", encoding="utf-8") as f:
-            payload = json.load(f)
-        return payload.get("articles", []), target_file
-    except (json.JSONDecodeError, IOError) as e:
-        logger.error(f"💥 Failed to load summaries: {e}")
-        return None
-
-
 MARKET_DATA_MAX_AGE_HOURS = int(os.getenv("MARKET_DATA_MAX_AGE_HOURS", "20"))
 
 
@@ -239,46 +216,8 @@ def format_iso_date(iso_str: str) -> str:
         return iso_str[:16].replace("T", " ")
 
 
-def prepare_context(articles: List[Dict], market_data: Optional[Dict] = None) -> Dict:
+def prepare_context(market_data: Optional[Dict] = None) -> Dict:
     """Format all data into a Jinja2-friendly context dictionary."""
-    # Surface the most relevant articles first, then cap the total shown
-    # so the email stays digestible.
-    sorted_articles = sorted(
-        articles,
-        key=lambda a: a.get("relevance_score", 0) or 0,
-        reverse=True,
-    )
-    sorted_articles = sorted_articles[:MAX_ARTICLES]
-
-    formatted_articles = []
-    for art in sorted_articles:
-        # Parse market_impact into sentiment, sector, and detail
-        market_impact_text = art.get("market_impact", "")
-        market_impact_sentiment = "Neutral"
-        market_impact_sector = ""
-        market_impact_detail = ""
-        
-        if market_impact_text:
-            parts = [p.strip() for p in market_impact_text.split("|")]
-            if len(parts) >= 1:
-                market_impact_sentiment = parts[0]
-            if len(parts) >= 2:
-                market_impact_sector = parts[1]
-            if len(parts) >= 3:
-                market_impact_detail = parts[2]
-        
-        formatted_articles.append({
-            "title": art.get("title", "Untitled"),
-            "link": art.get("link", "#"),
-            "source": art.get("source", "Unknown"),
-            "published": format_iso_date(art.get("published_iso") or art.get("published")),
-            "summary": art.get("concise_summary", "Summary unavailable."),
-            "impact_explanation": art.get("why_it_matters", ""),
-            "market_impact_sentiment": market_impact_sentiment,
-            "market_impact_sector": market_impact_sector,
-            "market_impact_detail": market_impact_detail,
-        })
-
     now = datetime.now(timezone.utc)
     ist = timezone(timedelta(hours=5, minutes=30))
     now_ist = now.astimezone(ist)
@@ -287,8 +226,6 @@ def prepare_context(articles: List[Dict], market_data: Optional[Dict] = None) ->
         "date": now_ist.strftime("%A, %B %d, %Y"),
         "generated_at": now.strftime("%Y-%m-%d %H:%M:%S UTC"),
         "generated_at_ist": now_ist.strftime("%Y-%m-%d %I:%M %p IST"),
-        "articles": formatted_articles,
-        "top_stories": formatted_articles,
         # Market report fields — populated from market_data if available
         "executive_summary": None,
         "key_themes": [],
@@ -396,22 +333,8 @@ def run_generation_pipeline() -> Optional[Tuple[Path, Path, Path]]:
     """Execute the complete newsletter generation & archival pipeline."""
     logger.info("🚀 === Starting Newsletter Generation ===")
 
-    load_result = load_latest_summarized()
-    if not load_result:
-        return None
-
-    articles, source_path = load_result
-    if not articles:
-        logger.warning(
-            "⚠️ No summarized articles available for rendering — the 'Top Stories' "
-            "section will not appear in this newsletter. This means the raw "
-            "fetch/clean/summarize stages produced zero usable articles; check "
-            "fetch_news.log and clean_news.log for the cause (dead feed URLs, "
-            "quality filter, etc.)."
-        )
-
     market_data = load_market_data()
-    context = prepare_context(articles, market_data)
+    context = prepare_context(market_data)
 
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     archive_dir = NEWSLETTER_DIR / date_str

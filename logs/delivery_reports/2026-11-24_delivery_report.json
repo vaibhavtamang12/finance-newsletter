@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "sent_at": "2026-11-24T18:06:54.309750+00:00",
+    "newsletter_date": "2026-11-24",
+    "smtp_server": "smtp.gmail.com",
+    "pipeline_version": "v1.0.0"
+  },
+  "stats": {
+    "total": 4,
+    "sent": 4,
+    "failed": 0
+  },
+  "delivery_log": [
+    {
+      "email": "deadlyhacker12@gmail.com",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 November 24"
+    },
+    {
+      "email": "hello@northerninvest.ca",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 November 24"
+    },
+    {
+      "email": "newperson@example.com",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 November 24"
+    },
+    {
+      "email": "prlinsightspartners@gmail.com",
+      "status": "success",
+      "subject": "[Daily] Finance Market Digest - 2026 November 24"
+    }
+  ]
+}
